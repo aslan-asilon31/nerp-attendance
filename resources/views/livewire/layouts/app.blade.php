@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" />
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <style>
+    .swiper-slide img {
+      width: 100%; /* Make the images fill the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 </head>
 
 <body class="min-h-screen font-sans antialiased bg-base-200/50 dark:bg-base-200">
@@ -29,7 +42,7 @@
   {{-- MAIN --}}
   <x-main full-width>
     {{-- SIDEBAR --}}
-    <x-slot:sidebar drawer="main-drawer" collapsible class="bg-base-100 lg:bg-inherit">
+    <x-slot:sidebar drawer="main-drawer" collapsible class="!bg-purple-900 lg:bg-inherit">
 
       {{-- BRAND --}}
       <x-app-brand class="p-5 pb-0" />

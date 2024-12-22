@@ -26,11 +26,13 @@ class AppBrand extends Component
                     <!-- Hidden when collapsed -->
                     <div {{ $attributes->class(["hidden-when-collapsed"]) }}>
                         <div class="flex items-center justify-center gap-2">
-                            <span class="font-bold text-3xl me-3 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-transparent ">
-                                UMEDA
+                            <span class="font-bold text-3xl me-3 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-transparent">
+                                 
+                                        <img class="w-12 h-16 sm:h-16 md:w-24 lg:32 object-cover rounded-t-lg" style="" src="{{ asset('asset-ui/my-logo-aslan-circle.png') }}" alt="logo">
                             </span>
                         </div>
                     </div>
+
 
                     <!-- Display when collapsed -->
                     <div class="display-when-collapsed hidden mx-5 mt-4 lg:mb-6 h-[28px]">

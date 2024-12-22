@@ -21,7 +21,7 @@ class Login extends Component
   public function mount()
   {
     if (\Illuminate\Support\Facades\Auth::check()) {
-      return redirect()->intended('dashboard');
+      return redirect()->intended('welcome');
     }
   }
 
